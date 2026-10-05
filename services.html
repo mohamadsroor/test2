@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Services - Dein Name</title>
+    <!-- Wir kopieren exakt dasselbe Design hinein -->
+    <style>
+        :root {
+            --bg-color: #0a0a0c;
+            --card-bg: #13131a;
+            --accent-color: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: var(--font-family); line-height: 1.6; }
+        
+        /* Navigation (identisch mit Home) */
+        nav { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; background: rgba(10, 10, 12, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .logo { font-size: 1.25rem; font-weight: 800; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--text-main); }
+        
+        /* Content-Bereich */
+        section { padding: 10rem 10% 6rem 10%; }
+        .section-title { font-size: 3rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 1rem; }
+        .section-subtitle { color: var(--text-muted); font-size: 1.25rem; margin-bottom: 4rem; max-width: 600px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background-color: var(--card-bg); border: 1px solid rgba(255, 255, 255, 0.03); padding: 2.5rem; border-radius: 16px; }
+        .card-icon { font-size: 2rem; margin-bottom: 1.5rem; display: inline-block; }
+        .card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+        .card p { color: var(--text-muted); }
+        footer { padding: 4rem 10%; border-top: 1px solid rgba(255, 255, 255, 0.05); display: flex; justify-content: space-between; align-items: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 4rem;}
+        @media (max-width: 768px) { nav, section, footer { padding-left: 5%; padding-right: 5%; } .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DEIN.NAME</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" style="color: var(--text-main);">Services</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 class="section-title">Unsere Services</h1>
+        <p class="section-subtitle">Hier ist eine detaillierte Übersicht darüber, wie wir dir dabei helfen können, digital zu wachsen.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <span class="card-icon">🎨</span>
+                <h3>Premium Webdesign</h3>
+                <p>Maßgeschneiderte, moderne Benutzeroberflächen, die Besucher fesseln und deine Markenidentität perfekt widerspiegeln.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">⚡</span>
+                <h3>High-Speed Performance</h3>
+                <p>Keine zähen Baukästen. Durch sauberen Code lädt deine Webseite in Millisekunden – perfekt für Google Rankings.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">📈</span>
+                <h3>SEO-Optimierung</h3>
+                <p>Wir strukturieren deine Inhalte so, dass Suchmaschinen sie lieben und du von deinen Wunschkunden gefunden wirst.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>&copy; 2026 Dein Name.</div>
+        <div>Modernes Webdesign für morgen.</div>
+    </footer>
+
+</body>
+</html>
