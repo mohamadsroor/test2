@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Dein Name</title>
+    <style>
+        /* Gleiches Basis-Design */
+        :root { --bg-color: #0a0a0c; --card-bg: #13131a; --accent-color: #6366f1; --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7); --text-main: #f3f4f6; --text-muted: #9ca3af; --font-family: system-ui, sans-serif; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: var(--font-family); }
+        nav { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; background: rgba(10, 10, 12, 0.7); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); z-index: 1000; }
+        .logo { font-size: 1.25rem; font-weight: 800; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--text-main); }
+        
+        section { padding: 10rem 10% 6rem 10%; max-width: 800px; }
+        .section-title { font-size: 3rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 1.5rem; }
+        p { color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.1rem; }
+        .cta-btn { display: inline-block; padding: 0.8rem 2rem; background: var(--accent-gradient); color: #fff; text-decoration: none; font-weight: 600; border-radius: 8px; box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3); }
+        footer { padding: 4rem 10%; border-top: 1px solid rgba(255, 255, 255, 0.05); display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.9rem; margin-top: 8rem; }
+        @media (max-width: 768px) { nav, section, footer { padding-left: 5%; padding-right: 5%; } .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DEIN.NAME</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="kontakt.html" style="color: var(--text-main);">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 class="section-title">Lass uns dein Projekt starten.</h1>
+        <p>Du hast eine Vision, ein Business oder eine Idee, die ein modernes digitales Gewand braucht? Schreib uns ganz unkompliziert eine E-Mail. Wir antworten in der Regel innerhalb von 24 Stunden.</p>
+        <a href="mailto:deine-adresse@email.com" class="cta-btn">Jetzt E-Mail schreiben</a>
+    </section>
+
+    <footer>
+        <div>&copy; 2026 Dein Name.</div>
+        <div>Modernes Webdesign für morgen.</div>
+    </footer>
+
+</body>
+</html>
